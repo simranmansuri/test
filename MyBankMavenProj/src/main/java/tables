@@ -1,0 +1,14 @@
+create table account
+(
+aid number(4) primary key,
+holder varchar2(20) ,
+balance number(10,2)
+);
+
+insert into account values (100,'Ram',50000.00);
+insert into account values (102,'Sham',20000.00);
+insert into account values (103,'Krishna',22000.00);
+insert into account values (104,'Ganesh',10000.00);
+
+commit;
+select * from account;
